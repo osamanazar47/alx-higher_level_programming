@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import add_0 as modulee
+from add_0 import add
 a = 1
 b = 2
 result = modulee.add(a, b)
