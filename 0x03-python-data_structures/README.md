@@ -10,3 +10,4 @@ this is a project about data structures:lists, tupes
 8- a function that adds 2 tuples
 9- a function that returns a tuple with the length of a string and its first characte
 10- a function that finds the biggest integer of a list
+11- a function that finds all multiples of 2 in a list
