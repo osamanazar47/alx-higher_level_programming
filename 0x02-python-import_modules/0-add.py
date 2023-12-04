@@ -1,2 +1,6 @@
+#!/usr/bin/python3
 import add_0 as modulee
-modulee.add(1,2)
+a = 1
+b = 2
+result = modulee.add(a, b)
+print("{} + {} = {}".format(a, b,  result))
