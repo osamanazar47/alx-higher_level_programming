@@ -1,4 +1,4 @@
-#!/usr/bin/path
+#!/usr/bin/python3
 if __name__ == "__main__":
     import calculator_1 as c
     a = 10
