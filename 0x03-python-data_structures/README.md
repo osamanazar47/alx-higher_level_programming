@@ -7,4 +7,5 @@ this is a project about data structures:lists, tupes
 5- a function that replaces an element in a list at a specific position without modifying the original list
 6- a function that removes all characters c and C from a string
 7- a function that prints a matrix of integers
-8- function that adds 2 tuples 
+8- a function that adds 2 tuples
+9- a function that returns a tuple with the length of a string and its first character 
