@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    print("{}".foramt(len(argv)), end='')
-    if len(argv) == 1:
+    from sys import argv
+    print("{}".format(len(argv) - 1), end=' ')
+    if len(argv) == 2:
         print("argument" + ":" if len(argv) > 0 else ".")
     else:
         print("arguments" + ":" if len(argv) > 0 else ".")
