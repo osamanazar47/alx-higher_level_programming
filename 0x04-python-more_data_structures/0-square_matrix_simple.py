@@ -1,5 +1,3 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            matrix[i][j] = pow(matrix[i][j], 2)
+    return list(map(lambda row: list(map(lambda x: x**2, row)), matrix))
