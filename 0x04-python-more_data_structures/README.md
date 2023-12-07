@@ -33,4 +33,5 @@ this is a python project about lists, sets, dictionaries and pther types of data
 10-best_score.py:-
  a function that returns a key with the biggest integer value
 
-
+11-multiply_list_map.py:-
+ a function that returns a list with all values multiplied by a number without using any loops
