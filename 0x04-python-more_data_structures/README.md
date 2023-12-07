@@ -29,3 +29,8 @@ this is a python project about lists, sets, dictionaries and pther types of data
 
 9-multiply_by_2.py:-
  a function that returns a new dictionary with all values multiplied by 2
+
+10-best_score.py:-
+ a function that returns a key with the biggest integer value
+
+
