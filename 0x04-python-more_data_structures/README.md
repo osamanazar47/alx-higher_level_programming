@@ -23,3 +23,6 @@ this is a python project about lists, sets, dictionaries and pther types of data
 
 7-update_dictionary.py:-
  a function that replaces or adds key/value in a dictionary
+
+8-simple_delete.py:-
+ a function that deletes a key in a dictionary
