@@ -1,4 +1,5 @@
 #!/use/bin/python3
+
 """Define a class by the name of Square."""
 
 
