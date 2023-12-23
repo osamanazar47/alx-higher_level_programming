@@ -9,3 +9,5 @@ i will explain each file here
 1-square.py: a file that contains a class with a private instance attribute size
 
 2-square.py: a file that contains a class Square that defines a square by: (based on 1-square.py)
+
+3-square.py: a file that contains a class Square that defines a square by: (based on 2-square.py) and with a new public method (area)
