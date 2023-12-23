@@ -11,3 +11,7 @@ i will explain each file here
 2-square.py: a file that contains a class Square that defines a square by: (based on 1-square.py)
 
 3-square.py: a file that contains a class Square that defines a square by: (based on 2-square.py) and with a new public method (area)
+
+4-square.py: a file that contains a class Square that defines a square by: (based on 3-square.py) but with the implementations for setters and getters
+
+
