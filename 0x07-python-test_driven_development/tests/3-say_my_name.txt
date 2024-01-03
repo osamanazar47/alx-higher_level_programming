@@ -1,0 +1,37 @@
+============================
+the ``3-say_my_name`` module
+============================
+
+Usage
+=====
+Takes two arguments first_name and last_name
+prints 'My name is first_name last_name'
+
+Importing function from the module:
+  >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+  >>> say_my_name('osama', 'nazar')
+  My name is osama nazar
+
+if one argument is passed the function will work fine it will just assign the second arg to default value which is ('')
+ 
+  >>> say_my_name('osama')
+  My name is osama 
+ 
+if one of the two args or both passed is non string it will raise a TypeError
+ 
+  >>> say_my_name('osama', 3)
+  Traceback (most recent call last):
+  TypeError: last_name must be a string
+ 
+  >>> say_my_name(3, 'osama')
+  Traceback (most recent call last):
+  TypeError: first_name must be a string
+ 
+  >>> say_my_name(None)
+  Traceback (most recent call last):
+  TypeError: first_name must be a string
+ 
+  >>> say_my_name('osama', 'nazar', 'antar')
+  Traceback (most recent call last):
+  TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
