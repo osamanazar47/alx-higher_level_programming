@@ -7,3 +7,7 @@ Tasks: each file contain a task i will explain them one by one
 
 0-rectangle.py:
 An empty class Rectangle that defines a rectangle
+
+1-rectangle.py:
+Creating a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
+
