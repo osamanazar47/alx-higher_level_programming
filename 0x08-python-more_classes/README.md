@@ -22,3 +22,9 @@ a class Rectangle that defines a rectangle by: (based on 3-rectangle.py) with on
 
 5-rectangle.py:
 based on the last one with on new method del()(this is a method that will be called automatically each time an instance of Rectangle is deleted)
+
+6-rectangle.py:
+ a class Rectangle that defines a rectangle by: (based on 5-rectangle.py) with a new class attribute that increment with each new instance instantiation and decrement during each instance deletion
+
+7-rectangle.py:
+based on the last file with one new public class attribute print_symbol
