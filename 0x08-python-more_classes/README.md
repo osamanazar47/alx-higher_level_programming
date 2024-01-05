@@ -28,3 +28,6 @@ based on the last one with on new method del()(this is a method that will be cal
 
 7-rectangle.py:
 based on the last file with one new public class attribute print_symbol
+
+8-rectangle.py:
+a class Rectangle that defines a rectangle by: (based on 7-rectangle.py) with a new method bigger_or_equal(rect_1, rect_2) that returns the rectangle with the bigger area
