@@ -11,6 +11,7 @@ class Rectangle:
       height(int): the height of the rectangle
     """
     def __init__(self, width=0, height=0):
+        """the constructure for the Rectangle class"""
         self.width = width
         self.height = height
 
@@ -31,7 +32,7 @@ class Rectangle:
     @property
     def height(self):
         """A getter for the height of the rectangle"""
-        return self.__heigh
+        return self.__height
 
     @height.setter
     def height(self, value):
