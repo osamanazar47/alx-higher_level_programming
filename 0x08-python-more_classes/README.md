@@ -31,3 +31,6 @@ based on the last file with one new public class attribute print_symbol
 
 8-rectangle.py:
 a class Rectangle that defines a rectangle by: (based on 7-rectangle.py) with a new method bigger_or_equal(rect_1, rect_2) that returns the rectangle with the bigger area
+
+9-rectangle.py:
+a class Rectangle that defines a rectangle by: (based on 8-rectangle.py) with a new class method that returns a square by th size passed
