@@ -14,4 +14,7 @@ Creating a class Rectangle that defines a rectangle by: (based on 0-rectangle.py
 2-rectangle.py:
 Creating a class Rectangle that defines a rectangle by: (based on 1-rectangle.py) with the addition of two methods area and perimeter
 
+3-rectangle.py:
+a class Rectangle that defines a rectangle by: (based on 2-rectangle.py) with a new method __str__
+
 
