@@ -11,6 +11,7 @@ class Rectangle:
       height(int): the height of the rectangle
     """
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """the constructure for the Rectangle class"""
         self.width = width
