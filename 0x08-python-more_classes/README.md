@@ -17,4 +17,8 @@ Creating a class Rectangle that defines a rectangle by: (based on 1-rectangle.py
 3-rectangle.py:
 a class Rectangle that defines a rectangle by: (based on 2-rectangle.py) with a new method __str__
 
+4-rectangle.py:
+a class Rectangle that defines a rectangle by: (based on 3-rectangle.py) with one new method __repr__() that returns a string representation of the rectangle
 
+5-rectangle.py:
+based on the last one with on new method del()(this is a method that will be called automatically each time an instance of Rectangle is deleted)
