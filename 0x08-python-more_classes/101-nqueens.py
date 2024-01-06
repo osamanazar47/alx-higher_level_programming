@@ -113,7 +113,7 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: nqueens N")
         sys.exit(1)
-    if not isinstance(sys.argv[1], int):
+    if not sys.argv[1].isdigit():
         print("N must be a number")
         sys.exit(1)
     if int(sys.argv[1]) < 4:
