@@ -25,8 +25,7 @@ Testcases:
 
 ::
 
-  >>> my_list = MyList()
   >>> a = []
-  >>> my_list.append(a)
+  >>> my_list = MyList(a)
   >>> my_list.print_sorted()
   []
