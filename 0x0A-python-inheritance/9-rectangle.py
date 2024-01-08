@@ -19,5 +19,6 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """returns an info about the rectangle"""
-        return "[{}] {}/{}".format(self.__class__.__name__, self.__width, 
-                self.__height)
+        string = "[" + str(self.__class__.__name__) + "] "
+        string += str(self.__width) + "/" + str(self.__height)
+        return string
