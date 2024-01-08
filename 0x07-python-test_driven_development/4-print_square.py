@@ -7,7 +7,7 @@ def print_square(size):
     Initializing the function
 
     The function prints a square with the character #
-    
+
     Args:
        size(int): the size length of the square
 
