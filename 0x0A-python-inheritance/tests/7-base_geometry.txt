@@ -1,0 +1,17 @@
+=======================
+The BaseGeometry module
+=======================
+
+Methods:
+========
+area: raises an Exception with the message area() is not implemented
+integer_validator: that validates value
+  Raises:
+  =======
+      - a TypeError exception, with the message <name> must be an integer
+      - a ValueError exception with the message <name> must be greater than 0
+
+  >>> BG = __import__('7-base_geometry').BaseGeometry
+  >>> m = __import__("7-base_geometry").__doc__
+  >>> len(m) > 1
+  True  
