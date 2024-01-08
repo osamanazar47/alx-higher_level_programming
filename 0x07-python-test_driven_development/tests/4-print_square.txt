@@ -1,0 +1,57 @@
+=================================
+Testing the print_square function
+=================================
+
+Usage:
+======
+prints a square with the character #
+It accepts one argument (size) and it is the size length of the square
+
+Importing the module:
+=====================
+  >>> print_square = __import__('4-print_square').print_square
+
+Testcases:
+==========
+  >>> print_square(4)
+  ####
+  ####
+  ####
+  ####
+
+::
+
+Calling the function with a non integer will raise an error
+  >>> print_square('osama')
+  Traceback (most recent call last):
+  TypeError: size must be an integer
+
+::
+
+Calling the function with a float type would raise a TypeError
+  >>> print_square(3.2)
+  Traceback (most recent call last):
+  TypeError: size must be an integer
+
+::
+
+Also when calling it with a size less than zero an error will be raised
+  >>> print_square(-1)
+  Traceback (most recent call last):
+  ValueError: size must be >= 0
+
+::
+
+But the if size is a float and is less than 0 a TypeError would be raised not a ValueError
+  >>> print_square(-2.5)
+  Traceback (most recent call last):
+  TypeError: size must be an integer
+
+::
+
+  >>> print_square(1)
+  #
+  >>> print_square(0)
+  
+when size is zero the function deos not output anything
+
