@@ -3,4 +3,5 @@
 
 
 class BaseGeometry:
+    """Initializing a class BaseGeometry"""
     pass
