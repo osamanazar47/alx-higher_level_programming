@@ -7,5 +7,5 @@ def load_from_json_file(filename):
     Args:
        filename: the name of the json file
     """
-    with open(filename) as f:
+    with open(filename, 'w') as f:
         json.load(filename, f)
