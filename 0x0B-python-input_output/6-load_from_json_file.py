@@ -7,5 +7,6 @@ def load_from_json_file(filename):
     Args:
        filename: the name of the json file
     """
-    with open(filename, 'w') as f:
-        json.load(filename, f)
+    with open(filename, 'r') as f:
+        text = f.read()
+        return json.loads(text)
