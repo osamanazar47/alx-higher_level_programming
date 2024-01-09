@@ -14,16 +14,7 @@ class Student:
 
     def to_json(self, attrs=None):
         """A method that returns the dic representation"""
-        if attrs in None:
-            return self.__dict__
-        if not isinstance(attrs, list):
-            raise TypeError('attrs must be a list')
-        result = {}
-        for element in attrs:
-            if not isinstance(element, str):
-                raise TypeError('Attribute names must be strings')
-            if hasattr(self, element):
-                result[element] = getattr(self, element)
-            else:
-                pass
-        return result
+        if (type(attrs) == list and
+                all(type(ele) == str for ele in attrs)):
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
+        return self.__dict__
