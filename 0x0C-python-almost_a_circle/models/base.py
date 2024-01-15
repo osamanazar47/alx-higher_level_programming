@@ -9,7 +9,7 @@ class Base:
 
     def __init__(self, id=None):
         """the constructor with a public instance attribute id"""
-        if id != None:
+        if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
@@ -30,12 +30,12 @@ class Base:
     def save_to_file(cls, list_objs):
         if list_objs is None:
             list_objs = []
-        json_rep = cls.to_json_string([obj.to_dictionary() for obj in list_objs])
+        j_rep = cls.to_json_string([obj.to_dictionary() for obj in list_objs])
         name = cls.__name__
         filename = "{}.json".format(name)
         with open(filename, "w") as f:
-            f.write(json_rep)
-    
+            f.write(j_rep)
+
     @staticmethod
     def from_json_string(json_string):
         """Return the deserialization of a JSON string.
@@ -92,7 +92,9 @@ class Base:
         with open(name, "w") as file:
             for obj in list_objs:
                 if isinstance(obj, Rectangle):
-                    line = "{},{},{},{},{}".format(obj.id, obj.width, obj.height, obj.x, obj.y)
+                    line = "{},{},{},{},{}".format(
+                            obj.id, obj.width, obj.height, obj.x, obj.y
+                    )
                 elif isinstance(obj, Square):
                     line = "{},{},{},{}".format(obj.id, obj.size, obj.x, obj.y)
 
