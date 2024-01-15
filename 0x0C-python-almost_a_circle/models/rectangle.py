@@ -129,7 +129,7 @@ class Rectangle(Base):
                 self.__x = args[3]
             if len(args) >= 5:
                 self.__y = args[4]
-        elif kwargs ad len(kwargs) != 0:
+        elif kwargs and len(kwargs) != 0:
             if 'id' in kwargs:
                 if kwargs['id'] is not None:
                     self.id = kwargs['id']
