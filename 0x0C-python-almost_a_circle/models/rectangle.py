@@ -4,9 +4,11 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """Initializing class Rectangle
-    class Rectangle inherits the Base class"""
+    """Representation of class Rectangle"""
+
     def __init__(self, width, height, x=0, y=0, id=None):
+        """Initializing class Rectangle
+    class Rectangle inherits the Base class"""
         self.__width = width
         self.__height = height
         self.__x = x
@@ -137,7 +139,6 @@ class Rectangle(Base):
 
     def __str__(self):
         """A method that returns a string representation of the class"""
-
         string = "[" + str(self.__class__.__name__) + "] "
         string += "(" + str(self.id) + ") "
         string += "{}/{}".format(str(self.__x), str(self.__y))
