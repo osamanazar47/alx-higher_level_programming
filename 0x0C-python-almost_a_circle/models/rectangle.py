@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Define class Rectangle that inherits from Base"""
-Base = __import__("Base").Base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -88,14 +88,6 @@ class Rectangle(Base):
                 print("#", end='')
             print()
 
-    def __str__(self):
-        """A method that returns a string representation of the class"""
-
-        string = "[" + str(self.__class__.__name__) + "] "
-        string += "(" + str(self.id) + ") "
-        string += "{}/{}".format(str(self.__x), str(self.__y))
-        string += " - " + "{}/{}".format(str(self.__width), str(self.__height))
-        return string
 
     def update(self, *args, **kwargs):
         """Update the Rectangle.
@@ -132,3 +124,22 @@ class Rectangle(Base):
                 self.__x = kwargs['x']
             if 'y' in kwargs:
                 self.__y = kwargs['y']
+
+    def to_dictionary(self):
+        """Return the dictionary representation of a Rectangle."""
+        return {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
+        }
+
+    def __str__(self):
+        """A method that returns a string representation of the class"""
+
+        string = "[" + str(self.__class__.__name__) + "] "
+        string += "(" + str(self.id) + ") "
+        string += "{}/{}".format(str(self.__x), str(self.__y))
+        string += " - " + "{}/{}".format(str(self.__width), str(self.__height))
+        return string
