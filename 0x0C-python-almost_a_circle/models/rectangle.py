@@ -8,11 +8,23 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initializing class Rectangle
-    class Rectangle inherits the Base class"""
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+    class Rectangle inherits the Base class
+    Args:
+            width (int): The width of the new Rectangle.
+            height (int): The height of the new Rectangle.
+            x (int): The x coordinate of the new Rectangle.
+            y (int): The y coordinate of the new Rectangle.
+            id (int): The identity of the new Rectangle.
+        Raises:
+            TypeError: If either of width or height is not an int.
+            ValueError: If either of width or height <= 0.
+            TypeError: If either of x or y is not an int.
+            ValueError: If either of x or y < 0.
+        """
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
         super().__init__(id)
 
     @property
@@ -77,11 +89,14 @@ class Rectangle(Base):
 
     def area(self):
         """Returns the area of the rectangle"""
-        return self.__width * self.__height
+        return self.width * self.height
 
     def display(self):
         """Prints the Rectangle instance with the character #
         while taking care of x and y"""
+        if self.width == 0 or self.height == 0:
+            print("")
+            return
         for y in range(self.__y):
             print()
         for h in range(self.__height):
