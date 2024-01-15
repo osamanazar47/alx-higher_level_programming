@@ -105,7 +105,6 @@ class Rectangle(Base):
                 print("#", end='')
             print()
 
-
     def update(self, *args, **kwargs):
         """Update the Rectangle.
 
