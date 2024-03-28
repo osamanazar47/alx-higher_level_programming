@@ -2,21 +2,23 @@
 """Finds a peak in a list of unsorted integers"""
 
 
-def find_peak(list_of_integers, left=None, right=None):
-    """A function that finds the peak in a list using divide and conquer."""
-    if left is None:
-        left = 0
-    if right is None:
-        right = len(list_of_integers) - 1
+def find_peak(list_of_integers):
+    """Finds a peak in list_of_integers"""
 
-    if left == right:
-        return list_of_integers[left]
-
-    mid = (left + right) // 2
-
-    if list_of_integers[mid] < list_of_integers[mid + 1]:
-        # If the middle element is less than the next element, peak must be on the right side
-        return find_peak(list_of_integers, mid + 1, right)
-    else:
-        # Otherwise, peak must be on the left side or at the middle element
-        return find_peak(list_of_integers, left, mid)
+    if list_of_integers is None or list_of_integers == []:
+        return None
+    lo = 0
+    hi = len(list_of_integers)
+    mid = ((hi - lo) // 2) + lo
+    mid = int(mid)
+    if hi == 1:
+        return list_of_integers[0]
+    if hi == 2:
+        return max(list_of_integers)
+    if list_of_integers[mid] >= list_of_integers[mid - 1] and\
+            list_of_integers[mid] >= list_of_integers[mid + 1]:
+        return list_of_integers[mid]
+    if mid > 0 and list_of_integers[mid] < list_of_integers[mid + 1]:
+        return find_peak(list_of_integers[mid:])
+    if mid > 0 and list_of_integers[mid] < list_of_integers[mid - 1]:
+        return find_peak(list_of_integers[:mid])
