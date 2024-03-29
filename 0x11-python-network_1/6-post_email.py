@@ -8,6 +8,6 @@ as a parameter, and finally displays the body of the response.
 if __name__ == '__main__':
     import sys
     import requests
-    email = "email: {}".format(sys.argv[2])
+    email = {'email': sys.argv[2]}
     res = requests.post(sys.argv[1], data=email)
     print("Your email is", res.content)
