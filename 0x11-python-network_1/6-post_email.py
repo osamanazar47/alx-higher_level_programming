@@ -10,4 +10,4 @@ if __name__ == '__main__':
     import requests
     email = {'email': sys.argv[2]}
     res = requests.post(sys.argv[1], data=email)
-    print("Your email is:", res.text)
+    print(res.text)
