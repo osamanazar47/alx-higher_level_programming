@@ -8,10 +8,8 @@ if __name__ == '__main__':
     import requests
     import sys
 
-    if sys.argv[1]:
-        q = {'q': sys.argv[1]}
-    else:
-        q = {'q': ""}
+    letter = "" if len(sys.argv) == 1 else sys.argv[1]
+    q = {"q": letter}
     url = "http://0.0.0.0:5000/search_user"
     res = requests.post(url, data=q)
     try:
