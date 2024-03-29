@@ -9,5 +9,5 @@ if __name__ == '__main__':
     import sys
     import requests
     email = "email: {}".format(sys.argv[2])
-    res = requests.get(sys.argv[1], params=email)
+    res = requests.post(sys.argv[1], params=email)
     print("Your email is", res.content)
