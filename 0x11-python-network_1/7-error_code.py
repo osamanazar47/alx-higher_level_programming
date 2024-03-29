@@ -8,11 +8,9 @@ manage urllib.error.HTTPError exceptions and print: Error code: followed by the 
 if __name__ == '__main__':
     import sys
     import requests
-    import requests.exceptions
 
-    try:
-        res = requests.get(sys.argv[1])
-        res.raise_for_status()
-        print(res.content)
-    except requests.exceptions.HTTPError as err:
-        print("Error code:", err)
+    res = requests.get(sys.argv[1])
+    if res.status_code >= 400:
+        print("Error code: {}".format(res.status_code))
+    else:
+        print(res.text)
