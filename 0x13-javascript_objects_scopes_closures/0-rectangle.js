@@ -3,6 +3,5 @@ class Rectangle
 {
 	constructor()
 	{
-		return;
 	}
 }
